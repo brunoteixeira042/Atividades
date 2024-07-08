@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'MontSerat',sans-serif;
+}
+
+header{
+    font-size: medium;
+    text-align: center;
+    margin: 2rem;    
+}
+section * {
+    margin: 1rem;
+    text-align: center;
+
+
+}
+.button{
+    
+    background-color: rgb(90, 166, 253);
+    padding: 1em;
+    border: 2em;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+.button-black{
+    background-color: rgb(33, 33, 33);
+    padding: 1em;
+    border: 2em;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+
+footer{
+    background-color:rgb(33, 33, 33);
+    color: aliceblue;
+    padding: 1em;
+    text-align: center;
+}
+.linha{
+    border-color: black;
+}
