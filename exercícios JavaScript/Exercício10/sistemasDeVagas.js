@@ -25,9 +25,9 @@ function criarVaga() {
     data,
     candidatos: []
   };
-
   arrayDeVagas.push(vaga);
-  alert('Vaga criada com sucesso' +
+   confirm
+  ('Deseja criar vaga? ' +
     '\nId: ' + id +
     '\nNome: ' + nome +
     '\nDescrição: ' + descricao +
@@ -68,9 +68,12 @@ function adicionarUsuario() {
   const vaga = arrayDeVagas.find(vaga => vaga.id === id);
   if (vaga) {
     const nomeCandidato = prompt('Digite o nome do Candidato: ');
+      confirm('Deseja adicionar Candidato? ' +
+      '\nNome: ' +  nomeCandidato +
+      '\nVaga: ' + vaga.nome )
     vaga.candidatos.push(nomeCandidato);
     alert('Candidato adicionado com sucesso');
-  } else {
+}else {
     alert('Id não encontrado');
   }
 }
