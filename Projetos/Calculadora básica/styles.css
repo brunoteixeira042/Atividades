@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#2C2C2C;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background-color: #1e1e1e; /* Fundo escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    background-color: #333333; /* Fundo do display mais escuro */
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #ffffff; /* Texto branco */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #424242; /* Botões escuros */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff; /* Texto branco */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #616161; /* Botões ficam mais claros ao passar o mouse */
+}
+
+button:active {
+    background-color: #757575; /* Cor ao clicar */
+}
+
+button.zero {
+    grid-column: span 2;
+}
+
+button:nth-child(4) {
+    background-color: #d32f2f; /* Botão "DEL" com cor vermelha */
+}
+
+button:nth-child(4):hover {
+    background-color: #c62828;
+}
